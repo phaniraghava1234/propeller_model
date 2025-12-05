@@ -183,4 +183,14 @@ subject to   P(c) ≤ P_max
 
 ## References
 
-1. **Glauert, H.** (1935). *Airplane Propellers*. In *Aerodynamic Theory* (Vol. IV,
+1. **Glauert, H.** (1935). *Airplane Propellers*. In *Aerodynamic Theory* (Vol. IV, Div. L). Springer, Berlin.
+
+2. **Conway, J. T.** (1998). *Analytical solutions for the actuator disk with variable radial distribution of load*. Journal of Fluid Mechanics, 297, 327-355. DOI: [10.1017/S0022112098003093](https://doi.org/10.1017/S0022112098003093)
+
+3. **Adkins, C. N., & Liebeck, R. H.** (1994). *Design of optimum propellers*. Journal of Propulsion and Power, 10(5), 676-682. DOI: [10.2514/3.23779](https://doi.org/10.2514/3.23779)
+
+4. **Drela, M.** (2007). *QPROP Formulation*. MIT Aero & Astro. [http://web.mit.edu/drela/Public/web/qprop/](http://web.mit.edu/drela/Public/web/qprop/)
+
+5. **Selig, M. S.** *UIUC Propeller Database*. University of Illinois. [https://m-selig.ae.illinois.edu/props/propDB.html](https://m-selig.ae.illinois.edu/props/propDB.html)
+
+6. **Goldstein, S.** (1929). *On the vortex theory of screw propellers*. Proceedings of the Royal Society of London. Series A, 123(792), 440-465.
