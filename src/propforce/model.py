@@ -171,7 +171,8 @@ class RadialActuatorDisk:
         # Torque from swirl (simplified, proportional to loading and radius)
         # Assumes tangential force ~ dT/dr * (r / R) / (2 * pi * efficiency_factor)
         swirl_factor = 0.05  # empirical, represents induced swirl losses
-        dQ_dr = swirl_factor * dT_dr * self.r_stations / self.geom.radius
+        # dQ_dr = swirl_factor * dT_dr * self.r_stations / self.geom.radius
+        dQ_dr = swirl_factor * dT_dr * self.r_stations
         torque = np.trapz(dQ_dr, dx=dr[0])
         
         # # Power: P = T * (V_inf + w_avg) + Q * omega
