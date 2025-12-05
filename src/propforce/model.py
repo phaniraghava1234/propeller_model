@@ -174,10 +174,21 @@ class RadialActuatorDisk:
         dQ_dr = swirl_factor * dT_dr * self.r_stations / self.geom.radius
         torque = np.trapz(dQ_dr, dx=dr[0])
         
-        # Power: P = T * (V_inf + w_avg) + Q * omega
-        w_avg = np.mean(w)
-        power_axial = thrust * (flow.velocity_inf + w_avg)
+        # # Power: P = T * (V_inf + w_avg) + Q * omega
+        # w_avg = np.mean(w)
+        # power_axial = thrust * (flow.velocity_inf + w_avg)
+        # power_rotational = torque * flow.omega
+        # power = power_axial + power_rotational
+                # Power: Integrate dP = dT * (V + w) + dQ * omega
+        # 1. Axial Power (Thrust * local velocity)
+        #    P_axial = Integral( (V_inf + w(r)) * dT/dr ) dr
+        local_axial_velocity = flow.velocity_inf + w
+        dP_axial_dr = dT_dr * local_axial_velocity
+        power_axial = np.trapz(dP_axial_dr, dx=dr[0])
+        
+        # 2. Rotational Power
         power_rotational = torque * flow.omega
+        
         power = power_axial + power_rotational
         
         return thrust, torque, power, dT_dr, w
