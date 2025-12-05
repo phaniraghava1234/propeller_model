@@ -185,7 +185,7 @@ subject to   P(c) ≤ P_max
 
 1. **Glauert, H.** (1935). *Airplane Propellers*. In *Aerodynamic Theory* (Vol. IV, Div. L). Springer, Berlin.
 
-2. **Conway, J. T.** (1998). *Analytical solutions for the actuator disk with variable radial distribution of load*. Journal of Fluid Mechanics, 297, 327-355. DOI: [10.1017/S0022112098003093](https://doi.org/10.1017/S0022112098003093)
+2. **Conway, J. T.** (1998). *Analytical solutions for the actuator disk with variable radial distribution of load*. Journal of Fluid Mechanics, 297, 327-355. DOI: [https://doi.org/10.1017/S0022112095003120](https://doi.org/10.1017/S0022112098003093)
 
 3. **Adkins, C. N., & Liebeck, R. H.** (1994). *Design of optimum propellers*. Journal of Propulsion and Power, 10(5), 676-682. DOI: [10.2514/3.23779](https://doi.org/10.2514/3.23779)
 
